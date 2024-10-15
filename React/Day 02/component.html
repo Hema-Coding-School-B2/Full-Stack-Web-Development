@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      let creatImg = (name,img) => {
+        return (
+          <div style={{padding:'20px',boxShadow:"0px 0px 10px blue"}}>
+            <h1>Welcome to Day 02</h1>;
+            <h2>{name}</h2>
+            <img src={img} alt="" width="300px" height="300px"/>
+          </div>
+        )
+      };
+      //   let App = (
+      //     <div>
+      //       <div>{creatImg()}</div>
+      //       <div>{creatImg()}</div>
+      //       <div>{creatImg()}</div>
+      //     </div>
+      //   );
+        let styleTag = {
+            display:'flex',
+             justifyContent:"space-around"
+        }
+      let root = ReactDOM.createRoot(document.getElementById("root"));
+      root.render(
+        <div style={styleTag}>
+          <div>{creatImg("TATA","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcAMBUmnBovAnuo2ZQNq8uX3O3inspjaf-Kodrnh6RZUn0kHuP")}</div>
+          <div>{creatImg("Sundar","https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcRyRO88ATLjhaUzr12Tdt_xPGfF3KGeRnQRqRrB2CNLhwGoktP7XaRUREKpn9nKm8Dl0MkRiRfKqx5n0n0")}</div>
+          <div>{creatImg("TATA","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcAMBUmnBovAnuo2ZQNq8uX3O3inspjaf-Kodrnh6RZUn0kHuP")}</div>
+     
+        </div>
+      );
+    </script>
+  </body>
+</html>

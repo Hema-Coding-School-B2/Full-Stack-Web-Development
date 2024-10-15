@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="javascript-dom"></div>
+    <div id="react-dom"></div>
+    <script type="text/babel">
+        let timer=()=>{
+            document.getElementById('javascript-dom').innerHTML =
+            `<h1>Javascript</h1>
+            <h2>${new Date().toLocaleTimeString()}</h2>
+            `
+            let reactDomElement = <>
+            <h1>React</h1>
+            <h2>{new Date().toLocaleTimeString()}</h2>
+            </>
+            ReactDOM.render(reactDomElement,document.getElementById('react-dom'))
+        }
+        // timer()
+        setInterval(timer,1000)
+    </script>
+  </body>
+</html>
