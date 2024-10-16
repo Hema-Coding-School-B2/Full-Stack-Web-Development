@@ -1,16 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import  ClassBased  from "./Component/ClassBased.js";
+import  FunctionBased  from "./Component/FunctionBased.js";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Welcome to React js classes
-        </p>
-       
-      </header>
+      Welcome to React js classes
+      <ClassBased />
+      <FunctionBased/>
     </div>
   );
 }
