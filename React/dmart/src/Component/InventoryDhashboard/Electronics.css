@@ -1,0 +1,36 @@
+.device-container{
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.electronic-container{
+    display: grid;
+    max-width: 1200px;
+    /* grid-template-columns: 300px 300px 300px; */
+    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+    gap:20px;
+    margin-top: 10px;
+
+
+
+}
+
+button{
+    background-color: rgb(131, 234, 131);
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    margin: 10px;
+}
+button:hover{
+    background-color: aqua;
+    cursor: pointer;
+}

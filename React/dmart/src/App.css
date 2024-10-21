@@ -1,3 +1,25 @@
-.App {
-  text-align: center;
+
+.nav-bar{
+  background-color: rgb(15, 16, 15);
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+  padding: 10px;
+}
+.nav-link{
+  background-color: rgb(116, 116, 242);
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.nav-link:hover{
+  background-color: aqua;
+  cursor: pointer;
+}
+
+.logo img{
+  width: 70px;
+  height: 50px;
+  border-radius: 10px;
 }
