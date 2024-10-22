@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Electronics.css";
 
 const Electronics = () => {
@@ -27,6 +27,9 @@ const Electronics = () => {
         setEletronic(data);
       });
   };
+  // useEffect(()=>{
+  //   getElectronics()
+  // },[electronic])
   return (
     <div className="container">
       <div className="electronic-container">
