@@ -9,8 +9,9 @@ import { useState } from "react";
 // import ListItem from "./Component/InventoryDhashboard/ListItem.js";
 
 // import Electronics from './Component/InventoryDhashboard/Electronics.js'
-import ComputorAccessories from "./Component/InventoryDhashboard/ComputorAccessories.js";
-import Stand from "./Component/InventoryDhashboard/Stand.js";
+// import ComputorAccessories from "./Component/InventoryDhashboard/ComputorAccessories.js";
+// import Stand from "./Component/InventoryDhashboard/Stand.js";
+import Jewellery from "./Component/InventoryDhashboard/Jewellery.js";
 
 function App() {
   let [state, setState] = useState(false);
@@ -26,13 +27,13 @@ function App() {
         <div className="nav-link">Home</div>
       </div>
       {/* <Electronics/> */}
-
-      {state ? <ComputorAccessories /> : <Stand />}
+      <Jewellery/>
+      {/* {state ? <ComputorAccessories /> : <Stand />}
 
       <div className="train-info">
         <button onClick={() => setState(true)}>Computor Accessories</button>
         <button onClick={() => setState(false)}>Stand</button>
-      </div>
+      </div> */}
     </div>
   );
 
