@@ -11,7 +11,11 @@ import { useState } from "react";
 // import Electronics from './Component/InventoryDhashboard/Electronics.js'
 // import ComputorAccessories from "./Component/InventoryDhashboard/ComputorAccessories.js";
 // import Stand from "./Component/InventoryDhashboard/Stand.js";
-import Jewellery from "./Component/InventoryDhashboard/Jewellery.js";
+// import Jewellery from "./Component/InventoryDhashboard/Jewellery.js";
+// import UseRefObject from "./Component/Hooks/UseRefObject.js";
+// import SalesReports from './Component/SalesDhashboard/SalesReports.js'
+import MonthlySalesReport from './Component/SalesDhashboard/MonthlySalesReport.js'
+
 
 function App() {
   let [state, setState] = useState(false);
@@ -27,7 +31,10 @@ function App() {
         <div className="nav-link">Home</div>
       </div>
       {/* <Electronics/> */}
-      <Jewellery/>
+      {/* <Jewellery/> */}
+      {/* <UseRefObject/> */}
+      {/* <SalesReports/> */}
+      <MonthlySalesReport/>
       {/* {state ? <ComputorAccessories /> : <Stand />}
 
       <div className="train-info">
