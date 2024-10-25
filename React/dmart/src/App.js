@@ -14,7 +14,11 @@ import { useState } from "react";
 // import Jewellery from "./Component/InventoryDhashboard/Jewellery.js";
 // import UseRefObject from "./Component/Hooks/UseRefObject.js";
 // import SalesReports from './Component/SalesDhashboard/SalesReports.js'
-import MonthlySalesReport from './Component/SalesDhashboard/MonthlySalesReport.js'
+// import MonthlySalesReport from './Component/SalesDhashboard/MonthlySalesReport.js'
+// import UseReducer from "./Component/Hooks/UseReducer.js";
+
+import ShoppingCart from './Component/AvailableProduct/ShoppingCart'
+
 
 
 function App() {
@@ -34,7 +38,9 @@ function App() {
       {/* <Jewellery/> */}
       {/* <UseRefObject/> */}
       {/* <SalesReports/> */}
-      <MonthlySalesReport/>
+      {/* <MonthlySalesReport/> */}
+      {/* <UseReducer/> */}
+      <ShoppingCart/>
       {/* {state ? <ComputorAccessories /> : <Stand />}
 
       <div className="train-info">
