@@ -19,8 +19,9 @@ import { useState } from "react";
 
 import ShoppingCart from './Component/AvailableProduct/ShoppingCart'
 
+import UseMemo from './Component/Hooks/UseMemo.js'
 
-
+import UseCallback from './Component/Hooks/UseCallback/UseCallback.js'
 function App() {
   let [state, setState] = useState(false);
   return (
@@ -40,7 +41,9 @@ function App() {
       {/* <SalesReports/> */}
       {/* <MonthlySalesReport/> */}
       {/* <UseReducer/> */}
-      <ShoppingCart/>
+      {/* <ShoppingCart/> */}
+      {/* <UseMemo/> */}
+      <UseCallback/>
       {/* {state ? <ComputorAccessories /> : <Stand />}
 
       <div className="train-info">
