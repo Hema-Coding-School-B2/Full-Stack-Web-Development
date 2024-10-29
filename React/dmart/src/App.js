@@ -22,6 +22,8 @@ import ShoppingCart from './Component/AvailableProduct/ShoppingCart'
 import UseMemo from './Component/Hooks/UseMemo.js'
 
 import UseCallback from './Component/Hooks/UseCallback/UseCallback.js'
+
+import A from './Component/Hooks/UseContext/A.js'
 function App() {
   let [state, setState] = useState(false);
   return (
@@ -43,7 +45,8 @@ function App() {
       {/* <UseReducer/> */}
       {/* <ShoppingCart/> */}
       {/* <UseMemo/> */}
-      <UseCallback/>
+      {/* <UseCallback/> */}
+      <A/>
       {/* {state ? <ComputorAccessories /> : <Stand />}
 
       <div className="train-info">
