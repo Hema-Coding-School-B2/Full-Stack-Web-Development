@@ -11,6 +11,9 @@
   padding: 10px;
   border-radius: 10px;
   font-weight: bold;
+  text-decoration: none;
+    color: white;
+
 }
 
 .nav-link:hover{
