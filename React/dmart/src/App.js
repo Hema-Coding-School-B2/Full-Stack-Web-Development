@@ -27,8 +27,12 @@ import SalesReports from './Component/SalesDhashboard/SalesReports.js'
 import Home from './Component/Home.js'
 import PageNotFound from './Component/PageNotFound.js'
 import Device from './Component/Device.js'
+import DeviceDetails from './Component/DeviceDetails.js'
 
-import {Routes,Route,Link} from 'react-router-dom'
+
+import {Routes,Route,Link,Navigate} from 'react-router-dom'
+
+import Product from './Component/AvailableProduct/Product.js'
 function App() {
   let [state, setState] = useState(false);
   return (
@@ -56,10 +60,16 @@ function App() {
         <Route path="/jewellery" element={<Jewellery/>} />
         <Route path="/sales-reports" element={<SalesReports/>} />
         <Route path="/electronics" element={<Electronics/>} />
+        <Route path="/device-details/:id" element={<DeviceDetails/>} />
+
 
       
         <Route path="/device" element={<Device/>}>
+        <Route path="" element={<Navigate to="computor-accessories"/>}/>
         <Route path="computor-accessories" element={<ComputorAccessories/>}/>
+        <Route path="product" element={<Product/>}/>
+
+
         </Route>
 
 

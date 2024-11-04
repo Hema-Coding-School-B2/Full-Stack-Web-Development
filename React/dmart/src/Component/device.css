@@ -1,0 +1,27 @@
+.dev-container{
+
+    text-align: center;
+    margin: 20px;
+}
+.dev-link{
+    background-color: rgb(32, 205, 244);
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.dev-link:hover{
+    background-color:orange
+
+}
+
+.dev-link.active{
+    background-color:rgb(108, 202, 6);
+    color: black;
+    
+
+}
+
