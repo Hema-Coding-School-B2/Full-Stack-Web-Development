@@ -33,6 +33,7 @@ import DeviceDetails from './Component/DeviceDetails.js'
 import {Routes,Route,Link,Navigate} from 'react-router-dom'
 
 import Product from './Component/AvailableProduct/Product.js'
+import CrudApp from './Component/CrudApp.js'
 function App() {
   let [state, setState] = useState(false);
   return (
@@ -42,6 +43,8 @@ function App() {
           <img src="https://logowik.com/content/uploads/images/dmart-avenue-supermarts4302.jpg" />
         </div>
     <Link to="/" className="nav-link">Home</Link>
+    <Link to="/crud-app" className="nav-link">Crud App</Link>
+
     <Link to="/electronics" className="nav-link">Electronics</Link>
     <Link to="/groceries" className="nav-link">Groceries</Link>
     <Link to="/jewellery" className="nav-link">Jewellery</Link>
@@ -53,9 +56,12 @@ function App() {
 
       
       </div>
+      
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="*" element={<PageNotFound/>} />
+        <Route path="/crud-app" element={<CrudApp/>} />
+
         <Route path="/groceries" element={<Groceries/>} />
         <Route path="/jewellery" element={<Jewellery/>} />
         <Route path="/sales-reports" element={<SalesReports/>} />
