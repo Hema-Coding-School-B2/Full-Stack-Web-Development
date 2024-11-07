@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.1.0/redux.js"></script>
+</head>
+<body>
+    <h2>Count: <b id="count">0</b></h2>
+    <button id="inc">Add</button>
+    <button id="dec">Remove</button>
+
+    <script>
+
+        let initialState = {
+            count:0
+        }
+        let myReducer = (state=initialState, action)=>{
+            console.log(state.count)
+            console.log(action)
+            console.log(action.type)
+            console.log(action.payload)
+
+            if(action.type == "ADD"){
+                console.log("Add")
+                console.log(state)
+                // console.log({...state,count:state.count})
+                let data = {...state,count:state.count + action.payload}
+                console.log(data)
+                document.getElementById('count').textContent = data.count
+                return data;
+            }
+            else if(action.type=="SUB"){
+                let data = {...state,count:state.count -action.payload}
+                document.getElementById('count').textContent = data.count
+                return data;
+
+            }
+
+        }
+        let store= Redux.createStore(myReducer)
+
+        document.getElementById('inc').addEventListener('click',action=()=>{
+            console.log('action')
+            console.log(store)
+            store.dispatch({type:'ADD',payload:2})
+        })
+        document.getElementById('dec').addEventListener('click',action=()=>{
+            console.log('action')
+            console.log(store)
+            store.dispatch({type:'SUB',payload:2})
+        })
+    </script>
+</body>
+</html>

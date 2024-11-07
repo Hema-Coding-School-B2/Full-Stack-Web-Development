@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.1.0/redux.js"></script>
+</head>
+<body>
+    <h2>Count: <b id="count">0</b></h2>
+    <button id="inc">Add</button>
+    <button id="dec">Remove</button>
+    <button id="mlt">Remove</button>
+
+
+    <script type="module">
+        import {store} from './store.js';
+        import {add,sub,mul} from './action.js'
+        console.log(store)
+
+        store.subscribe(()=>{
+            console.log(store.getState())
+        })
+        document.getElementById('inc').addEventListener('click',()=>{
+            console.log('action')
+            console.log(store)
+            store.dispatch(add(2))
+        })
+        document.getElementById('dec').addEventListener('click',()=>{
+           
+            store.dispatch(sub(2))
+        })
+
+        document.getElementById('mlt').addEventListener('click',()=>{
+            store.dispatch(mul(2))
+        })
+
+
+    </script>
+</body>
+</html>
