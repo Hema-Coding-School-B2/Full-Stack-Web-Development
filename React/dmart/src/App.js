@@ -34,6 +34,8 @@ import {Routes,Route,Link,Navigate} from 'react-router-dom'
 
 import Product from './Component/AvailableProduct/Product.js'
 import CrudApp from './Component/CrudApp.js'
+
+import InputComponent from './Component/ReactRedux/InputComponent.js';
 function App() {
   let [state, setState] = useState(false);
   return (
@@ -44,6 +46,8 @@ function App() {
         </div>
     <Link to="/" className="nav-link">Home</Link>
     <Link to="/crud-app" className="nav-link">Crud App</Link>
+    <Link to="/input-component" className="nav-link">Redux App</Link>
+
 
     <Link to="/electronics" className="nav-link">Electronics</Link>
     <Link to="/groceries" className="nav-link">Groceries</Link>
@@ -56,11 +60,12 @@ function App() {
 
       
       </div>
-      
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="*" element={<PageNotFound/>} />
         <Route path="/crud-app" element={<CrudApp/>} />
+        <Route path="/input-component" element={<InputComponent/>} />
+
 
         <Route path="/groceries" element={<Groceries/>} />
         <Route path="/jewellery" element={<Jewellery/>} />

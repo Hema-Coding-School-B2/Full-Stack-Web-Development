@@ -1,6 +1,11 @@
 import React,{useRef} from 'react'
 import '../styles.css'
+import {useSelector} from 'react-redux';
+import myAction from '../ReactRedux/action.js'
 const SalesReports = () => {
+    let data = useSelector((storedData)=>{
+        return storedData
+      })
 
     let productName =  useRef()
     let productId = useRef()
@@ -10,11 +15,12 @@ const SalesReports = () => {
         event.preventDefault()
         displayNameRef.current.textContent = productName.current.value
         console.log(`Product Name ${productName.current.value} and Product Id ${productId.current.value}`)
+        myAction(productName.current.value)
     }
 
   return (
     <div className="train-info">
-        <h2>Un Controlled Component</h2>
+        <h2>Un Controlled Component {data}</h2>
 
         <form>
 

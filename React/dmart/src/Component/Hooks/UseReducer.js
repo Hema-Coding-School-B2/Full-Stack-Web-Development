@@ -29,7 +29,6 @@ const UseReducer = () => {
     }
   let [state, dispatch] = useReducer(reducer,intialValue)
 //   console.log(dispatch)
-
   return (
     <div className="train-info">
       <div>UseReducer</div>
