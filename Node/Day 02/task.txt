@@ -1,0 +1,51 @@
+Task 1: File Operations with the fs Module
+Create, Read, Update, and Delete a File
+Create a script that:
+Creates a new file with some sample text.
+Reads the content of the file and logs it to the console.
+Updates the file by appending additional text.
+Deletes the file after a confirmation prompt.
+Modules used: fs.writeFile(), fs.readFile(), fs.appendFile(), and fs.unlink().
+
+
+
+
+Task 2: Directory and File Listing with fs and path Modules
+List All Files and Subdirectories in a Given Directory
+Write a script that:
+Accepts a directory path as input.
+Lists all files and subdirectories within the directory.
+Logs each item’s name, type (file or directory), and full path.
+Modules used: fs.readdir(), path.join(), and fs.stat().
+
+
+
+Task 3: Path Manipulation with the path Module
+Relative and Absolute Path Operations
+Create a script that:
+Takes two file paths as inputs.
+Logs whether each path is absolute or relative.
+Logs the relative path from the first path to the second.
+Modules used: path.isAbsolute(), path.relative(), and path.join().
+
+
+
+Task 4: Basic HTTP Server
+Set Up a Simple HTTP Server with Route Handling
+Write an HTTP server that:
+Listens on port 3000.
+Returns a "Home Page" message for the root URL (/).
+Returns a different message for /about and /contact.
+Sends a 404 message for any other URL.
+Modules used: http.createServer().
+
+
+
+
+Task 5: Serve Static Files with an HTTP Server
+Serve HTML, CSS, and JavaScript Files
+Build an HTTP server that:
+Serves files from a public folder based on URL paths.
+Serves an index.html file at the root (/) and other static files like CSS and JavaScript.
+Returns a 404 status if the requested file is not found.
+Modules used: http.createServer(), fs.readFile(), and path.join().
