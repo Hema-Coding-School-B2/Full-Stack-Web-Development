@@ -1,0 +1,25 @@
+1. Create a Readable Stream
+Objective: Implement a readable stream that emits data at intervals.
+
+Instructions:
+Use Node's stream.Readable class to create a custom readable stream.
+The stream should emit data (a random number) every second.
+After emitting five data chunks, the stream should end.
+
+
+2. Implement a Duplex Stream
+Objective: Create a duplex stream that echoes back data in uppercase.
+
+Instructions:
+Use Node’s stream.Duplex class to create a custom duplex stream.
+For each chunk of data written, convert it to uppercase and push it back.
+Test it by writing and reading data.
+
+
+3.  Create a Transform Stream
+Objective: Create a transform stream that reverses each data chunk.
+
+Instructions:
+Use Node’s stream.Transform class to create a custom transform stream.
+For each incoming chunk, reverse its content and pass it to the readable side.
+Test the stream by writing data and reading the transformed output.
