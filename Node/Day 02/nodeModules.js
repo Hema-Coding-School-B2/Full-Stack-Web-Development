@@ -1,9 +1,9 @@
-// let fs = require('fs')
+let fs = require('fs')
 // // console.log(fs)
 
-// fs.writeFile("newFile.txt","This is new nodejs document class",()=>{
-//     console.log("File has created successfully")
-// })
+fs.writeFile("newFile.txt","This is new nodejs document class",()=>{
+    console.log("File has created successfully")
+})
 
 // fs.readFile('newFile.txt','utf8',(err,data)=>{
 //     console.log(data)
