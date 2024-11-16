@@ -68,7 +68,7 @@ app.delete('/user-delete-data/:id',(req,res)=>{
     console.log(userIndex)
     let deletedUser = users.splice(userIndex,1)
 
-    console.log(`User with id ${userId} and deleted user is ${deletedUser}`)
+    console.log(`User with id ${userId} and deleted user is ${deletedUser[0]}`)
     res.json(users)
     
    
