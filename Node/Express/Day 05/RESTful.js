@@ -53,7 +53,7 @@ app.put('/user-update-data/:id',(req,res)=>{
     })
     console.log(userIndex)
     users[userIndex].name = name
-    console.log(`User with id ${userId} and updated user is ${ users[userIndex]}`)
+    console.log(`User with id ${userId} and updated user is ${ JSON.stringify(users[userIndex])}`)
     res.json(users)
 
 })
@@ -67,8 +67,8 @@ app.delete('/user-delete-data/:id',(req,res)=>{
     })
     console.log(userIndex)
     let deletedUser = users.splice(userIndex,1)
-
-    console.log(`User with id ${userId} and deleted user is ${deletedUser[0]}`)
+        console.log(deletedUser)
+    console.log(`User with id ${userId} and deleted user is ${JSON.stringify(deletedUser[0])}`, deletedUser[userIndex])
     res.json(users)
     
    
