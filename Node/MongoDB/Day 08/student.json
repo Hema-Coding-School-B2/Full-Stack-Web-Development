@@ -1,0 +1,37 @@
+[
+    {
+        "name": "Hema",
+        "age": 24,
+        "major": "Computer Science",
+        "skills": ["JavaScript", "Node.js"],
+        "gpa": 3.9
+     },
+     {
+        "name": "Mahesh",
+        "age": 22,
+        "major": "Mathematics",
+        "skills": ["Python", "Statistics"],
+        "gpa": 3.7
+     },
+     {
+        "name": "TATA",
+        "age": 23,
+        "major": "Physics",
+        "skills": ["C++", "Data Analysis"],
+        "gpa": 3.8
+     },
+     {
+        "name": "Sita",
+        "age": 21,
+        "major": "Biology",
+        "skills": ["Research", "Lab Work"],
+        "gpa": 3.6
+     },
+     {
+        "name": "Radha",
+        "age": 25,
+        "major": "Economics",
+        "skills": ["R", "Data Visualization"],
+        "gpa": 4.0
+     }
+]
