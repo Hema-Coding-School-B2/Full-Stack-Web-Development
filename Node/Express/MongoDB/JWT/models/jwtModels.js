@@ -7,7 +7,10 @@ mongoose.connect('mongodb://localhost:27017/myDataBase').then(()=>console.log('J
 const jwtUserSchema = new mongoose.Schema({
     name:{type:String,required:true},
     password:{type:String,required:true},
-    role:{type:String,required:true,enum:['user','owner']}
+    role:{type:String,required:true,enum:['user','owner']},
+    // image:{type:String}
+    image:[{type:String}]
+
 })
 
 const jwtUser = mongoose.model('jwttokenuser',jwtUserSchema)

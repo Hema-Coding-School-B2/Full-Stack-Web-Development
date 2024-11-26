@@ -3,7 +3,11 @@ const jwt = require('jsonwebtoken')
 const SECRET_Key = 'jwt-sign'
 const getRegisterData = (req,res)=>{
     console.log(req.body)
-    const newJwtUser = new jwtUser(req.body)
+    console.log(req.file)
+    const {name,password,role} = req.body;
+    // const imagePath = req.file ? req.file.path :'nule';
+    const imagePath = req.files.map(file=>file.path)
+    const newJwtUser = new jwtUser({name,password,role,image:imagePath})
         newJwtUser.save()
     res.json(newJwtUser)
 }   

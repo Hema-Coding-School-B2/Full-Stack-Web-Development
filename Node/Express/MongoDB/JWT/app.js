@@ -3,7 +3,7 @@ const app =  express()
 const cors = require('cors')
 app.use(cors())
 const router = require('./routes/jwtRoute.js')
-
+app.use('/uploads',express.static('uploads'))
 
 app.use('/jwt',router)
 const PORT = 3000;

@@ -36,6 +36,7 @@
                 headers:{'content-type':'application/json'},
                 body:JSON.stringify({name,password,role})
             }).then((res)=>{
+                window.location.href='login.html'
                 return res.json()
             }).then((data)=>{
                 console.log(data)

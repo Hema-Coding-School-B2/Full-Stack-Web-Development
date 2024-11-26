@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Dashboard Page</h1>
+    <p id="welcomeMessage">Loading...</p>
+    <div id="ownerSesstion" style="display: none;">
+        <h3>Owner features</h3>
+        <p>This sesstion only access by owner</p>
+    </div>
+    <div id="img"></div>
+    <script>
+        const token = localStorage.getItem('token')
+        console.log(token)
+        if(token){
+            fetch('http://localhost:3000/jwt/dashboard',{
+                method:'GET',
+                headers:{Authorization:token}
+            }).then((responce)=>{
+                return responce.json()
+            }).then((data)=>{
+                console.log(data)
+                const welcomeMessage = document.getElementById('welcomeMessage')
+                const ownerSesstion = document.getElementById('ownerSesstion')
+                const imageContainer = document.getElementById('img')
+                if(data.getUser){
+                    console.log(data.getUser)
+                    data.getUser.map((details)=>{
+                        console.log(details)
+                        welcomeMessage.textContent=`Welcome ${details.name}, your role is ${details.role}`
+                        if(details.role ==='owner'){
+
+                            imageContainer.innerHTML=`<img src=http://localhost:3000/${details.image} width="100px" height="100px"/>`
+                            ownerSesstion.style.display='block'
+                        }
+                    })
+                }
+
+            })
+        }
+    </script>
+</body>
+</html>
