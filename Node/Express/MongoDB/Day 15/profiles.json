@@ -1,0 +1,162 @@
+[
+    {
+        "_id": 1,
+        "name": "Ajay",
+        "age": 28,
+        "gender": "Male",
+        "interests": ["reading books", "traveling", "yoga"],
+        "description": "A book lover who enjoys exploring new cultures."
+    },
+    {
+        "_id": 2,
+        "name": "Sunita",
+        "age": 25,
+        "gender": "Female",
+        "interests": ["painting", "music", "gardening"],
+        "description": "A creative person who loves nature."
+    },
+    {
+        "_id": 3,
+        "name": "Ravi",
+        "age": 35,
+        "gender": "Male",
+        "interests": ["gaming", "science fiction", "technology"],
+        "description": "A tech enthusiast who enjoys futuristic ideas."
+    },
+    {
+        "_id": 4,
+        "name": "Madhavi",
+        "age": 30,
+        "gender": "Female",
+        "interests": ["cooking", "dance", "fitness"],
+        "description": "Loves experimenting with recipes and staying active."
+    },
+    {
+        "_id": 5,
+        "name": "Sai",
+        "age": 28,
+        "gender": "Male",
+        "interests": ["solitary walks", "history", "painting"],
+        "description": "A creative individual with an interest in history."
+    },
+    {
+        "_id": 6,
+        "name": "Lakshmi",
+        "age": 27,
+        "gender": "Female",
+        "interests": ["volunteering", "reading books", "meditation"],
+        "description": "A service-oriented woman seeking inner peace."
+    },
+    {
+        "_id": 7,
+        "name": "Arjun",
+        "age": 33,
+        "gender": "Male",
+        "interests": ["creativity", "traveling", "design"],
+        "description": "A creative soul who loves exploring the world."
+    },
+    {
+        "_id": 8,
+        "name": "Ramya",
+        "age": 24,
+        "gender": "Female",
+        "interests": ["singing", "dancing", "traveling"],
+        "description": "Dreams of performing on stages worldwide."
+    },
+    {
+        "_id": 9,
+        "name": "Venu",
+        "age": 28,
+        "gender": "Male",
+        "interests": ["cycling", "history", "lyric writing"],
+        "description": "A skilled writer with a flair for creativity."
+    },
+    {
+        "_id": 10,
+        "name": "Geetha",
+        "age": 29,
+        "gender": "Female",
+        "interests": ["cultural programs", "social media"],
+        "description": "Passionate about sharing stories that move society."
+    },
+    {
+        "_id": 11,
+        "name": "Vikram",
+        "age": 42,
+        "gender": "Male",
+        "interests": ["science fiction", "technology"],
+        "description": "Works on projects that inspire future generations."
+    },
+    {
+        "_id": 12,
+        "name": "Priya",
+        "age": 26,
+        "gender": "Female",
+        "interests": ["baking", "interior design"],
+        "description": "Loves creating beautiful spaces and delicious recipes."
+    },
+    {
+        "_id": 13,
+        "name": "Chandu",
+        "age": 26,
+        "gender": "Male",
+        "interests": ["chemistry", "arts"],
+        "description": "A person who combines science with creativity."
+    },
+    {
+        "_id": 14,
+        "name": "Lavanya",
+        "age": 32,
+        "gender": "Female",
+        "interests": ["blogging", "fashion"],
+        "description": "Enjoys sharing modern lifestyle and personal interests."
+    },
+    {
+        "_id": 15,
+        "name": "Sridhar",
+        "age": 26,
+        "gender": "Male",
+        "interests": ["sports", "videography"],
+        "description": "A sports enthusiast who loves documenting travels."
+    },
+    {
+        "_id": 16,
+        "name": "Swara",
+        "age": 23,
+        "gender": "Female",
+        "interests": ["music", "painting"],
+        "description": "An artist who creates the beauty of nature."
+    },
+    {
+        "_id": 17,
+        "name": "Raju",
+        "age": 41,
+        "gender": "Male",
+        "interests": ["classical music", "bird watching"],
+        "description": "Enjoys the peace of nature and classical tunes."
+    },
+    {
+        "_id": 18,
+        "name": "Jyothi",
+        "age": 28,
+        "gender": "Female",
+        "interests": ["volunteering", "fitness"],
+        "description": "Values social service and health above all."
+    },
+    {
+        "_id": 19,
+        "name": "Kiran",
+        "age": 29,
+        "gender": "Male",
+        "interests": ["history", "literature"],
+        "description": "A reader with an interest in ancient history and literature."
+    },
+    {
+        "_id": 20,
+        "name": "Pawan",
+        "age": 35,
+        "gender": "Male",
+        "interests": ["sports", "painting"],
+        "description": "A naturally imaginative person with a love for creativity."
+    }
+]
