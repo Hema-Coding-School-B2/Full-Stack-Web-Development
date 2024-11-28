@@ -1,4 +1,6 @@
 const jwtUser = require('../models/jwtModels.js')
+const indexUser = require('../models/indexModel.js')
+
 const jwt = require('jsonwebtoken')
 const SECRET_Key = 'jwt-sign'
 const getRegisterData = (req,res)=>{
@@ -10,6 +12,15 @@ const getRegisterData = (req,res)=>{
     const newJwtUser = new jwtUser({name,password,role,image:imagePath})
         newJwtUser.save()
     res.json(newJwtUser)
+} 
+const getIndexData = (req,res)=>{
+    console.log(req.body)
+    console.log(req.file)
+    const {name,age,role,gender} = req.body;
+   
+    const newIndexUser = new indexUser({name,age,role,gender})
+    newIndexUser.save()
+    res.json(newIndexUser)
 }   
 const getLoginData = async (req,res)=>{
     console.log(req.body)
@@ -41,5 +52,5 @@ const getDashboardData = async(req,res)=>{
     res.json({getUser})
 }
 module.exports = {
-    getRegisterData,getLoginData,getDashboardData,authenticateToken
+    getRegisterData,getLoginData,getDashboardData,authenticateToken,getIndexData
 }

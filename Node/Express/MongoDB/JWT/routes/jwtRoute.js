@@ -27,12 +27,14 @@ const upload = multer({
 })
 
 
-const {getRegisterData,getLoginData,getDashboardData,authenticateToken} = require('../controllers/jwtController.js')
+const {getRegisterData,getLoginData,getDashboardData,authenticateToken,getIndexData} = require('../controllers/jwtController.js')
 // jwtRouter.post('/register',upload.single('image'),getRegisterData)
 jwtRouter.post('/register',upload.array('image',5),getRegisterData)
 
 
 jwtRouter.post('/login',getLoginData)
+jwtRouter.post('/index',getIndexData)
+
 
 
 jwtRouter.get('/dashboard',authenticateToken,getDashboardData)
